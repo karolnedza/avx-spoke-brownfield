@@ -1,6 +1,14 @@
 variable "name" {}
 
-variable "cidr" {}
+variable "vpc_id" {}
+
+variable "access_key" {
+  default = ""
+}
+
+variable "secret_key" {
+  default = ""
+}
 
 variable "cloud" {
   type        = map(string)
