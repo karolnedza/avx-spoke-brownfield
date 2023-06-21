@@ -10,7 +10,7 @@ module "mc-spoke" {
   transit_gw = var.transit_gw[var.region]
   network_domain = var.network_domain
   ha_gw = false
-
+  use_existing_vpc = true
   depends_on = [aws_route_table_association.default]
 }
 
