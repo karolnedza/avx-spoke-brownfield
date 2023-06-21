@@ -2,6 +2,9 @@ variable "name" {}
 
 variable "vpc_id" {}
 
+variable "cidr" {
+  default = ""
+}
 variable "access_key" {
   default = ""
 }
